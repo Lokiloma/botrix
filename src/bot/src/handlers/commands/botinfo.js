@@ -70,10 +70,10 @@ module.exports = {
       )
       .addField(
         "Index:",
-        `[Invite Bot](${theBot.invite}) | [Website](${theBot.website}) | [Vote](http://botrix.cc/vote/${theBot.botid})`
+        `[Invite Bot](${theBot.invite}) | [Website](${theBot.website}) | [Vote](http://tumull.casino/vote/${theBot.botid})`
       )
       .setImage(theBot.bannerURL)
-      .setFooter(`Registered on Botrix since: ${theBot.addedAt.toString()}`);
+      .setFooter(`Registered on Tumull since: ${theBot.addedAt.toString()}`);
     return message.channel.send(botMessage);
   },
 };
