@@ -18,14 +18,14 @@ module.exports = {
 
     if (!bot) {
       const nomention = new MessageEmbed()
-        .setAuthor("Botrix", message.guild.iconURL())
+        .setAuthor("Tumull", message.guild.iconURL())
         .setTitle("Whoops, Something went wrong on our end.")
         .setColor("RED")
         .setDescription(
           "To move forward, please rerun this command mentioning a specific bot."
         )
         .setTimestamp()
-        .setFooter("© Botrix | 2020");
+        .setFooter("© Tumull | 2022");
       return message.reply(nomention);
     }
 
