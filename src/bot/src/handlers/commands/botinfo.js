@@ -14,23 +14,23 @@ module.exports = {
     const botUser = message.mentions.users.first();
 
     const noBot = new MessageEmbed()
-      .setAuthor("Botrix", message.guild.iconURL())
+      .setAuthor("Tumull", message.guild.iconURL())
       .setTitle("Oops, you made a mistake.")
       .setColor("RED")
       .setDescription("Please ping the bot you would like to get info about!")
       .setTimestamp()
-      .setFooter(`Botrix | 2020`);
+      .setFooter(`Tumull | 2022`);
 
     if (!botUser || !botUser.bot) {
       return message.channel.send(noBot);
     }
 
     const botrixPing = new MessageEmbed()
-      .setAuthor("Botrix", message.guild.iconURL())
+      .setAuthor("Tumull", message.guild.iconURL())
       .setTitle("Pfft, You wish!")
       .setColor("RED")
       .setDescription("-_- Why would we let you do that?")
-      .setFooter(`Botrix | 2020`)
+      .setFooter(`Tumull | 2022`)
       .setTimestamp();
 
     if (botUser.id === message.client.user.id) {
@@ -40,14 +40,14 @@ module.exports = {
     const theBot = await Bots.findOne({ botid: botUser.id });
 
     const notFound = new MessageEmbed()
-      .setAuthor("Botrix", message.guild.iconURL())
+      .setAuthor("Tumull", message.guild.iconURL())
       .setTitle("Hmm, You sure thats right?")
       .setColor("RED")
       .setDescription(
         "That bot wasnt found in our database, Please try again. If your bot is listed here and this issue continues please contact our staff for assistance."
       )
       .setTimestamp()
-      .setFooter(`Botrix | 2020`);
+      .setFooter(`Tumull | 2022`);
 
     if (!theBot) {
       return message.channel.send(notFound);
