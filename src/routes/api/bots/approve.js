@@ -24,7 +24,7 @@ route.get("/:id", async (req, res, next) => {
 
   var e = new discord.MessageEmbed()
     .setTitle("Bot Approved~!")
-    .setURL(`https://botrix.cc/bots/${bot.botid}`)
+    .setURL(`https://tumull.casino/bots/${bot.botid}`)
     .setColor("#00ff00")
     .setThumbnail(bot.icon)
     .addField(
@@ -60,15 +60,15 @@ route.get("/:id", async (req, res, next) => {
 
   try {
     let approvedEmbed = new discord.MessageEmbed()
-      .setTitle("Welcome to the Botrix Family!")
+      .setTitle("Welcome to the Tumull Family!")
       .setDescription(
-        `<@!${bot.botid}> has been approved and added to our [website](https://botrix.cc). Congratulations on all of your hard work, you're on the path to "big bot growth", as Discord would say!\n\n Below are some shortcuts for you, thanks for joining!`
+        `<@!${bot.botid}> has been approved and added to our [website](https://tumull.casino). Congratulations on all of your hard work, you're on the path to "big bot growth", as Discord would say!\n\n Below are some shortcuts for you, thanks for joining!`
       )
-      .addField(`Bot Page`, `[View](https://botrix.cc/bots/${bot.botid})`)
-      .addField(`Vote`, `[Vote](https://botrix.cc/vote/${bot.botid})`)
-      .addField(`Developer Portal`, `[View](https://botrix.cc/me)`)
+      .addField(`Bot Page`, `[View](https://tumull.casino/bots/${bot.botid})`)
+      .addField(`Vote`, `[Vote](https://tumull.casino/vote/${bot.botid})`)
+      .addField(`Developer Portal`, `[View](https://tumull.casino/me)`)
       .setColor(`#00FF00`)
-      .setFooter(`With love, Botrix.`)
+      .setFooter(`With love, Tumull.`)
       .setTimestamp();
     member.send(approvedEmbed);
   } catch (error) {
