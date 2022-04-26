@@ -16,11 +16,11 @@ module.exports = (client, member) => {
         .roles.cache.find((r) => r.id === config.BOT_DEVELOPER_ROLE_ID);
       member.roles.add(unverifiedRole_user);
      const welcomeEmbed = new discord.MessageEmbed()
-       .setTitle("Welcome to Botrix!")
+       .setTitle("Welcome to Tumull!")
        .setDescription(
-          `Botrix is the easiest way to list, advertise and grow your discord server and/or bot on discord!\n\n[List your bot](https://botrix.cc/add) | [Browse our selection](https://botrix.cc/discover)\n\nWe hope you enjoy your stay!`
+          `Tumull is the easiest way to list, advertise and grow your discord server and/or bot on discord!\n\n[List your bot](https://tumull.casino/add) | [Browse our selection](https://tumull.casino/discover)\n\nWe hope you enjoy your stay!`
         )
-        .setFooter("-Botrix Team")
+        .setFooter("-Tumull Team")
         .setColor("#fca311")
         .setTimestamp();
       member.send(welcomeEmbed); 
@@ -40,7 +40,7 @@ module.exports = (client, member) => {
           serverCount +
           " members in our guild.\n\nIf you have any questions, please reach out in any of our related channels."
       )
-      .setFooter("Botrix - Copyright 2020", member.guild.iconURL())
+      .setFooter("Tumull - Copyright 2022", member.guild.iconURL())
       .setTimestamp();
     channele.send(Embed); */
   }
