@@ -27,14 +27,14 @@ module.exports = {
 
     if (!bots_ && !servers_) {
       const error = new MessageEmbed()
-        .setAuthor("Botrix", message.guild.iconURL())
+        .setAuthor("Tumull", message.guild.iconURL())
         .setTitle("This bot is not in the cert queue!")
         .setColor("RED")
         .setDescription(
           'This bot does not exist or does not have a "pending" status'
         )
         .setTimestamp()
-        .setFooter("© Botrix | 2020");
+        .setFooter("© Tumull | 2022");
       return message.channel.send(error);
     }
 
@@ -50,7 +50,7 @@ module.exports = {
           );
 
       const success = new MessageEmbed()
-        .setAuthor("Botrix", message.guild.iconURL())
+        .setAuthor("Tumull", message.guild.iconURL())
         .setTitle(
           `${
             bot ? bot.user.username : args[0]
@@ -67,12 +67,12 @@ module.exports = {
         .send(success);
     } catch (e) {
       const unknownErr = new MessageEmbed()
-        .setAuthor("Botrix", message.guild.iconURL())
+        .setAuthor("Tumull", message.guild.iconURL())
         .setTitle("Whoops, Something went wrong on our end..")
         .setColor("RED")
         .setDescription("An error has occured, please check logs.")
         .setTimestamp()
-        .setFooter("© Botrix | 2020");
+        .setFooter("© Tumull | 2022");
       message.channel.send(e, unknownErr);
       console.error(`Deny Cert Error: ${e}`);
     }
