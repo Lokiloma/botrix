@@ -12,12 +12,12 @@ module.exports = {
     let bots = await Bots.find({ state: "verified" }, { _id: false });
 
     const embed = new MessageEmbed()
-      .setAuthor("Botrix", message.guild.iconURL())
-      .setTitle("Botrix Bot Count")
+      .setAuthor("Tumull", message.guild.iconURL())
+      .setTitle("Tumull Bot Count")
       .addField("Approved Bots", `${bots.length}`)
       .setColor("#6b83aa")
       .setTimestamp()
-      .setFooter("© Botrix | 2020");
+      .setFooter("© Tumull | 2022");
     return message.channel.send(embed);
   },
 };
