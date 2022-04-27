@@ -1,6 +1,6 @@
 <div class='header'>
     <div class='headerRes' id='headerRes'>
-        <a href='https://botrix.cc/' class='headerLogo'><img class='logo' src='https://media.discordapp.net/attachments/748427107968745512/810018388126597120/botrix_swirl.png?width=1031&height=1031' width='50px' height='50px'; alt='Botrix'></a>
+        <a href='https://tumull.casino/' class='headerLogo'><img class='logo' src='https://cdn.discordapp.com/avatars/914863556644720662/e3e7177fccdae7fe043cf30851157145.webp?size=4096' width='50px' height='50px'; alt='Tumull></a>
         <nav>
             <ul id='nav' class='nav_links'>
                 <li id='aLink1'><a  class='alink' href='/'>Home</a></li>
@@ -46,7 +46,7 @@
                                         <a onclick='changeTheme()'>Change Theme</a>
                                         <a href="/certified">Certification</a>
                                         <a href="/logout">Logout</a>
-                                        <% if(wallet.wallet) {  %><a href="/wallet/dash"> <%= wallet.wallet.walletAmount %> BTX </a><% } %>
+                                        <% if(wallet.wallet) {  %><a href="/wallet/dash"> <%= wallet.wallet.walletAmount %> TPC </a><% } %>
                                     </div> 
                                 </div>                            
                 <% } else { %>
@@ -101,23 +101,23 @@
             <div class='btx-popup-close' id='close'>
                 <a onclick='closePopup()' style='color: black; cursor: pointer;'>X</a>
             </div>
-            <h1>Get BTX</h1>
+            <h1>Get TPC</h1>
             <div class='sub-contianer'>
-                <p>BTX is used for boosting a bot/servers visibility, commonly known as "Bumping" <br> giving BTX to a bot boosts its visibility. <br> <bold>By getting BTX you help out botrix.</bold></p>    
+                <p>TPC is used for boosting a bot/servers visibility, commonly known as "Bumping" <br> giving TPC to a bot boosts its visibility. <br> <bold>By getting TPC you help out Tumull. TPC ( TiPo Coin).</bold></p>    
             </div>
             <br>
             <div class='sub-contianer'>
                 <table>
                     <tr>
-                      <td>100 BTX</td>
+                      <td>100 TPC</td>
                       <td><button style='float: right; background-color: var(--accentColor);' class='newButton' data-cost='1.99' data-name='basic' onclick="checkout('203918')">$1.99</button></td>
                     </tr>
                     <tr>
-                        <td>250 BTX</td>
+                        <td>250 TPC</td>
                         <td><button style='background-color: var(--accentColor); float: right;' class='newButton' data-cost='5.99' onclick="checkout('92849')">$5.99</button></td>
                     </tr>
                     <tr>
-                        <td>500 BTX</td>
+                        <td>500 TPC</td>
                         <td><button style='float: right; background-color: var(--accentColor);' class='newButton' data-cost='10.99' onclick="checkout('5342')">$10.99</button></td>
                     </tr>  
                 </table>
@@ -145,7 +145,7 @@
             setCookie("cart", cartData, 365);
 
             console.log(getCookie("cart"));
-            window.location.href = "/btx/checkout";
+            window.location.href = "/tpc/checkout";
         } else {
             let cart = getCookie("cart");
 
@@ -153,7 +153,7 @@
             
             setCookie("cart", cartData, 365);
             console.log(getCookie("cart"))
-            window.location.href = "/btx/checkout";
+            window.location.href = "/tpc/checkout";
         }
     }
 
