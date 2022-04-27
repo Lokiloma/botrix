@@ -17,15 +17,15 @@ module.exports = {
 
     if (bots.length === 0) {
       msg =
-        "There are currently no bots in our Queue, You can add one [here](https://botrix.cc/add/)";
+        "There are currently no bots in our Queue, You can add one [here](https://tumull.casino/add/)";
     } else {
       bots.forEach((bot) => {
-        msg += `<@${bot.botid}> | [Invite](https://discord.com/oauth2/authorize?client_id=${bot.botid}&scope=bot&guild_id=${config.GUILD_ID}&permissions=0) : [Page](https://botrix.cc/bots/${bot.botid})\n \n`;
+        msg += `<@${bot.botid}> | [Invite](https://discord.com/oauth2/authorize?client_id=${bot.botid}&scope=bot&guild_id=${config.GUILD_ID}&permissions=0) : [Page](https://tumull.casino/bots/${bot.botid})\n \n`;
       });
     }
 
     let embed = new MessageEmbed()
-      .setAuthor(`Botrix`, message.guild.iconURL())
+      .setAuthor(`Tumull`, message.guild.iconURL())
       .setColor("GREEN")
       .setThumbnail(message.author.displayAvatarURL())
       .setTitle(`Bots in Queue:`)
