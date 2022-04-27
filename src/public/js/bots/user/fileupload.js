@@ -11,14 +11,14 @@ document.addEventListener('load', () => {
         fd.append('filename', file);
     
         // send `POST` request
-        fetch('https://cdn.botrix.cc/uploadBanner', {
+        fetch('https://cdn.tumull.casino/uploadBanner', {
             method: 'POST',
             body: fd
         })
         .then(res => {
-            document.getElementById("bannerImage").src = `https://cdn.botrix.cc/banner/${uploadedUrl}`;
+            document.getElementById("bannerImage").src = `https://cdn.tumull.casino/banner/${uploadedUrl}`;
             document.getElementById("banenrImage").style.height  = "100px";
-            uploadedUrl = `https://cdn.botrix.cc/banner/${uploadedUrl}`;
+            uploadedUrl = `https://cdn.tumull.casino/banner/${uploadedUrl}`;
         })
         .then(json => console.log(json))
         .catch(err => console.error(err));
