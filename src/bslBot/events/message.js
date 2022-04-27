@@ -16,7 +16,7 @@ mongo.connect(config.MongoDbServer, { // ADD YOUR DB LINK HERE
     module.exports = (client, message) => {
         if (message.author.bot) return; // Ignore messages from bots (best)
 
-        let prefix = 'b.';
+        let prefix = '!';
 
         const args = message.content.split(/ +/g);
 
@@ -33,7 +33,7 @@ mongo.connect(config.MongoDbServer, { // ADD YOUR DB LINK HERE
         var  noAccess = new MessageEmbed()
         noAccess.setTitle('❌ Access Denied! ❌')
         noAccess.setDescription(`<@${message.author.id} This command is available to our Approvers only!`)
-        noAccess.setFooter('© Botrix | 2020')
+        noAccess.setFooter('© Tumull | 2022')
         noAccess.setTimestamp()
 
         if (cmd.requirements.approverOnly &&  !client.config.approvers.includes(message.author.id)) return message.channel.send(noAccess)
@@ -41,7 +41,7 @@ mongo.connect(config.MongoDbServer, { // ADD YOUR DB LINK HERE
         var  noAccess2 = new MessageEmbed()
         noAccess.setAuthor('❌ Lacking Permissions! ❌', message.author.displayAvatarURL())
         noAccess.setDescription(`<@${message.author.id} You are missing the ${missingPerms(message.member, cmd.requirements.userPerms)} permission`)
-        noAccess.setFooter('© Botrix | 2020')
+        noAccess.setFooter('© Tumull | 2022')
         noAccess.setTimestamp()
         
         if (cmd.requirements.userPerms && !message.member.permissions.has(cmd.requirements.userPerms)) return message.channel.send(noAccess2)
@@ -49,7 +49,7 @@ mongo.connect(config.MongoDbServer, { // ADD YOUR DB LINK HERE
         var  noAccess3 = new MessageEmbed()
         noAccess.setAuthor('❌ Lacking Permissions! ❌', message.author.displayAvatarURL())
         noAccess.setDescription(`<@${message.author.id} I am missing the ${missingPerms(message.guild.me, cmd.requirements.clientPerms)} permission`)
-        noAccess.setFooter('© Botrix | 2020')
+        noAccess.setFooter('© Tumull | 2022')
         noAccess.setTimestamp()
         
         if (cmd.requirements.clientPerms && !message.guild.me.permissions.has(cmd.requirements.clientPerms)) return message.channel.send(noAccess3)
@@ -63,7 +63,7 @@ mongo.connect(config.MongoDbServer, { // ADD YOUR DB LINK HERE
                     var  rateMessage = new MessageEmbed()
                     noAccess.setAuthor('❌ RateLimited! ❌', message.author.displayAvatarURL())
                     noAccess.setDescription(`<@${message.author.id} You need to wait` + "``" + `${cooldown.hours}h ${cooldown.minutes}m ${cooldown.seconds}s` + "``")
-                    noAccess.setFooter('© Botrix | 2020')
+                    noAccess.setFooter('© Tumull | 2022')
                     noAccess.setTimestamp()
                     return message.channel.send(rateMessage)
                 }
