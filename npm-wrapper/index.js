@@ -3,7 +3,7 @@ const axios = require('axios')
 class botrix{   
     constructor(apiKey){
         this.apiKey = apiKey
-        this.baseURL = `https://botrix.cc/api/v1/`;
+        this.baseURL = `https://tumull.casino/api/v1/`;
     }
 
 
