@@ -9,7 +9,7 @@ route.post("/:id", async (req, res, next) => {
     let body = req.body;
 
     if(!authBot) return res.end(JSON.stringify({error: "That is an invalid bot id"}));
-    if(!body.guils) return res.end(JSON.stringify({error: "That is an invalid useage, please refer to our docs docs.botrix.tk"}));
+    if(!body.guils) return res.end(JSON.stringify({error: "That is an invalid useage, please refer to our docs docs.tumull.casino"}));
 
     //set servers
     Bots.updateOne({ auth: req.headers.authorization.replace("Bearer ", "") }, { servers: body.guilds});
