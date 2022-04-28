@@ -64,7 +64,7 @@ route.post('/', async (req, res, next) => {
         
         var e = new discord.MessageEmbed()
         .setTitle('New server added!')
-        .setURL(`https://botrix.cc/servers/server/${guild.id}`)
+        .setURL(`https://tumull.casino/servers/server/${guild.id}`)
         .setColor('#00ff00')
         .setThumbnail(`https://cdn.discordapp.com/icons/${guild.id}/${guild.icon}.png`)
         .addField(`Info`, `Added by: <@${ownerArr[0]}>`, true)
