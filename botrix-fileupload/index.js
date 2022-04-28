@@ -27,7 +27,7 @@ app.post('/uploadBanner', function(req, res) {
                 console.log(error);
                 res.send(JSON.stringify({ status: "FAILED"}));
             } else {
-                res.send({ status: true,  message: 'File is uploaded', data: { bannerURL: 'cdn.botrix.cc/banner/'+filename, status: "OK"} });
+                res.send({ status: true,  message: 'File is uploaded', data: { bannerURL: 'cdn.tumull.casino/banner/'+filename, status: "OK"} });
             }
         })
 
@@ -49,5 +49,5 @@ function makeid(length) {
 }
 
 app.listen(80, (err) => {
-    console.log("Botrix CDN Network is online");
+    console.log("Tumull CDN Network is online");
 });
