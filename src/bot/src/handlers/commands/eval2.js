@@ -21,7 +21,7 @@ module.exports = {
 
       const { body } = await post("https://bin.tritan.gg/documents").send(err.toString());
       const embed = new MessageEmbed()
-        .setAuthor(`Botrix`, message.guild.iconURL())
+        .setAuthor(`Tumull`, message.guild.iconURL())
         .addField("Input:", `\`\`\`js\n${code}\`\`\``)
         .addField("Error:", `\`\`\`js\n${err.toString()}\`\`\``)
         .addField("URL:", `https://bin.tritan.gg/${body.key}.js`)
@@ -50,7 +50,7 @@ module.exports = {
     if (output.length < 1000) {
       const { body } = await post("https://bin.tritan.gg/documents").send(output);
       const embed = new MessageEmbed()
-        .setAuthor(`Botrix`, message.guild.iconURL())
+        .setAuthor(`Tumull`, message.guild.iconURL())
         .addField("Input:", `\`\`\`js\n${code}\`\`\``)
         .addField("Output:", `\`\`\`js\n${output}\`\`\``)
         .addField("URL:", `https://bin.tritan.gg/${body.key}.js`)
@@ -60,7 +60,7 @@ module.exports = {
     } else {
       const { body } = await post("https://bin.tritan.gg/documents").send(output);
       const embed = new MessageEmbed()
-        .setAuthor(`Botrix`, message.guild.iconURL())
+        .setAuthor(`Tumull`, message.guild.iconURL())
         .setTitle("Output was too long, uploaded to hastebin!")
         .setURL(`https://bin.tritan.gg/${body.key}.js`)
         .setColor("#ff0000")
