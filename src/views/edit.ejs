@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Botrix | Discord Bot List</title>
+    <title>Tumull | Discord Bot List</title>
     <link rel="stylesheet" href="/assets/css/index.css">
     <link rel="shortcut icon" href="">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -13,7 +13,7 @@
     <link type="text/css" rel="stylesheet" media="all" href="/assets/themes/main.css" id="theme_css" />
     <link rel="icon" 
       type="image/png" 
-      href="https://cdn.discordapp.com/attachments/747602999035166810/757838697080160356/logo_wo_background.png" />
+      href="https://cdn.discordapp.com/avatars/914863556644720662/e3e7177fccdae7fe043cf30851157145.webp?size=4096" />
     <script src="/js/bots/user/min/edit.min.js"></script>
 </head>
 <body onload='onload()'>
@@ -81,7 +81,7 @@
             </div>
             <br>
             <p>Banner Image</p>
-            <p>This will be displayed practically everywhere your bot is seen on botrix, make it pretty ;)</p>
+            <p>This will be displayed practically everywhere your bot is seen on tumull, make it pretty ;)</p>
             <input type='file' class='button' name='filename' id='banner'>
             <br>
             <img src='<%= bot.bannerURL %>' id='bannerImage' height="200px">
@@ -178,14 +178,14 @@
                 fd.append('filename', file);
             
                 // send `POST` request
-                fetch('https://cdn.botrix.cc/uploadBanner', {
+                fetch('https://cdn.tumull.casino/uploadBanner', {
                     method: 'POST',
                     body: fd
                 })
                 .then(res => {
-                    document.getElementById("bannerImage").src = `https://cdn.botrix.cc/banner/${uploadedUrl}`;
+                    document.getElementById("bannerImage").src = `https://cdn.tumull.casino/banner/${uploadedUrl}`;
                     document.getElementById("banenrImage").style.height  = "100px";
-                    uploadedUrl = `https://cdn.botrix.cc/banner/${uploadedUrl}`;
+                    uploadedUrl = `https://cdn.tumull.casino/banner/${uploadedUrl}`;
                 })
                 .then(json => console.log(json))
                 .catch(err => console.error(err));
