@@ -64,8 +64,8 @@ route.post('/:id', async (req, res, next) => {
                     .setColor('#00ff00')
                     .setThumbnail(bot.logo)
                     .setImage(bot.bannerURL)
-                    .setDescription(`[View bot page](https://botrix.cc/bots/${data.id})`)
-                    .setFooter("Botrix");
+                    .setDescription(`[View bot page](https://tumull.casino/bots/${data.id})`)
+                    .setFooter("Tumull");
 
                 let member = req.app.get('client').guilds.cache.get(config.GUILD_ID).member(req.user.id).send(e);
                 req.app.get('client').channels.cache.find(c => c.id === config.MOD_LOG).send(e)
