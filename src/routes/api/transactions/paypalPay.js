@@ -10,9 +10,8 @@ const route = Router();
 
 paypal.configure({
   'mode': 'live',
-  'client_id': 'AZ0gR9EN8H-QZezVs06TMzbBuetvNfbLVNxsEvY9SueRR0w_TW8Sox_tc8BImsWCSOAjQNmFe7LwzIH3',
-  'client_secret': 'EAGQDcth6q2j_jyLq64G4sUqFc0k4KvS8qkVoZR8AgNJ9-q-jlJoGPU4mfeDyYk7MQxDmP_zQxICmd2p'
-})
+  'client_id': 'AdTPCMEBcVxb7AmkBbkxpUogPTmxMCIJhBwzXMl2FgCZCzmZdzjcVC3xhXCikLWoOXA-XJsbtJgMSwoy',
+  'client_secret': 'ENNdKzIieAKPzQusnAo0AGTbhHa6pK9RniBgXwvqq9HfhgmVL5_9G2zTp1XYyI9sFVQXUhA7OOwN3uzQ)
 
 route.post('/', async (req, res, next) => {
 
@@ -46,8 +45,8 @@ route.post('/', async (req, res, next) => {
           "payment_method": "paypal"
       },
       "redirect_urls": {
-          "return_url": "http://localhost:8000/api/success",
-          "cancel_url": "http://localhost:8000/api/cancel"
+          "return_url": "https://tumull.casino/api/success",
+          "cancel_url": "https://tumull.casino/api/cancel"
       },
       "transactions": [{
           "item_list": {
