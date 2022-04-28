@@ -39,8 +39,8 @@ const sitemap_ = require('express-sitemap')();
 route.use("*", allroute);
 
 route.use('/queue', queue);
-route.use('/btx/checkout', checkoutPage);
-route.use('/btx/buy', storeRoute);
+route.use('/tpc/checkout', checkoutPage);
+route.use('/tpc/buy', storeRoute);
 route.use('/wallet/dash', walletDash);
 route.use('/wallet', walletRoute);
 route.use('/resubmit', resubmit);
