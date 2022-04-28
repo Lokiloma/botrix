@@ -10,12 +10,12 @@ module.exports = {
   developerOnly: true,
   async execute(message, args) {
     if (!config.OWNER_USERS.includes(message.author.id))
-      return message.channel.send("Sorry, but you are not an admin of botrix");
+      return message.channel.send("Sorry, but you are not an admin of tumull");
 
     if (!args[0]) {
       const dataCommand = new MessageEmbed()
         .setTitle(`The github repo is now pulling to the client.`)
-        .setAuthor(`Botrix`, message.guild.iconURL())
+        .setAuthor(`Tumull`, message.guild.iconURL())
         .setColor("#fca311")
         .setFooter(
           `Requested by ${message.author.tag}`,
