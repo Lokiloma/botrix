@@ -57,13 +57,13 @@ module.exports = {
     }
 
     let finalembed = new MessageEmbed()
-      .setAuthor("Botrix", message.guild.iconURL())
+      .setAuthor("Tumull", message.guild.iconURL())
       .setTitle(`${user.username}#${user.discriminator}'s bots`)
       .setColor("RED")
       .addField("Approved Bots", msg)
       .addField("Pending Bots", msg2)
       .addField("Denied Bots", msg3)
-      .setFooter("© Botrix | 2020")
+      .setFooter("© Tumull | 2022")
       .setTimestamp();
     return message.channel.send(finalembed);
   },
