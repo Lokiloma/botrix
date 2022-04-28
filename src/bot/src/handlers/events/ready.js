@@ -2,13 +2,13 @@ const chalk = require("chalk");
 
 module.exports = async (client) => {
   client.user.setPresence({
-    activity: { name: "https://botrix.cc/", type: "WATCHING" },
+    activity: { name: "https://tumull.casino", type: "PLAYING" },
     status: "idle",
   });
 
   setInterval(() => {
     client.user.setPresence({
-      activity: { name: "https://botrix.cc/", type: "WATCHING" },
+      activity: { name: "https://tumull.casino", type: "PLAYING" },
       status: "idle",
     });
     chalk.greenBright("[BOT UPDATE] The bot presence has been updated.");
