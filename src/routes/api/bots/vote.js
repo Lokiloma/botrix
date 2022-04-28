@@ -48,7 +48,7 @@ route.get('/:id', async (req, res, next) => {
       .setThumbnail(req.params.logo)
       .setImage(req.params.bannerURL)
       .setDescription(`<@!${req.user.id}> (${req.user.username}) has voted for <@${req.params.id}>`)
-      .addField("Bot Page", `[View bot Here](https://botrix.cc/bots/${req.params.id})`)
+      .addField("Bot Page", `[View bot Here](https://tumull.casino/bots/${req.params.id})`)
       .addField("Bot Votes", `${currentVotes}`)
       .setTimestamp()
     
@@ -57,7 +57,7 @@ route.get('/:id', async (req, res, next) => {
       .setColor('#fca311')
       .setThumbnail(req.params.logo)
       .setDescription(`<@!${req.user.id}> (${req.user.username}) has voted for <@${req.params.id}>`)
-      .addField("Bot Page", `[View bot Here](https://botrix.cc/bots/${req.params.id})`)
+      .addField("Bot Page", `[View bot Here](https://tumull.casino/bots/${req.params.id})`)
       .addField("Bot Votes", `${currentVotes}`)
       .setTimestamp()
     
@@ -78,7 +78,7 @@ route.get('/:id', async (req, res, next) => {
             let walletAmount = walletToPutAmount.walletAmount += 10;
             await wallet.updateOne({ userid: botUser.owners[0] }, {$set: {walletAmount:  walletAmount}});
 
-            console.log(`[/api/bots/vote.js] Transaction Received~! ${req.user.id} has put 10BTX in ${botUser.owners[0]} wallet from the botrix exchange ${transaction}`)
+            console.log(`[/api/bots/vote.js] Transaction Received~! ${req.user.id} has put 10TPC in ${botUser.owners[0]} wallet from the tumull exchange ${transaction}`)
         }
 
         if(botUser.webhook !== "none") { 
@@ -86,8 +86,8 @@ route.get('/:id', async (req, res, next) => {
             const webhookClient = new WebhookClient(webhook[3].toString(), webhook[4].toString());
             if(webhookClient){
                 webhookClient.send({
-                    username: 'Botrix',
-                    avatarURL: 'https://cdn.discordapp.com/attachments/747602999035166810/757838697080160356/logo_wo_background.png',
+                    username: 'Tumull,
+                    avatarURL: 'https://cdn.discordapp.com/avatars/914863556644720662/e3e7177fccdae7fe043cf30851157145.webp?size=4096',
                     embeds: [e3],
                 }).catch(() => {});
             }
