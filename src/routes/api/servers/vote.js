@@ -41,7 +41,7 @@ route.get('/:id', async (req, res, next) => {
            .setColor('#ffffff')
            .setThumbnail(_server.serverIco)
            .setDescription(`<@!${req.user.id}> (${req.user.username}) has voted for ${_server.name}`)
-           .addField("Server Page", `[View Server page](https://botrix.cc/servers/server/${req.params.id})`)
+           .addField("Server Page", `[View Server page](https://tumull.casino/servers/server/${req.params.id})`)
            .addField("Server Votes", `${currentVotes}`)
            .setTimestamp()
     
@@ -54,9 +54,9 @@ route.get('/:id', async (req, res, next) => {
             let webhook = new URL(_server.webhook).pathname.toString().split("/")
             const webhookClient = new WebhookClient(webhook[3].toString(), webhook[4].toString());
             if(webhookClient){
-              webhookClient.send(`${req.user.username} just vote for ${_server.name} on https://botrix.cc/servers/server/${req.params.id}`, {
-                    username: 'Botrix',
-                    avatarURL: 'https://cdn.discordapp.com/attachments/747602999035166810/757838697080160356/logo_wo_background.png',
+              webhookClient.send(`${req.user.username} just vote for ${_server.name} on https://tumull.casino/servers/server/${req.params.id}`, {
+                    username: 'Tumull,
+                    avatarURL: 'https://cdn.discordapp.com/avatars/914863556644720662/e3e7177fccdae7fe043cf30851157145.webp?size=4096',
                 }).catch(() => {});
             }
         }
