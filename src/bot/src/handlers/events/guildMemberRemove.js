@@ -15,6 +15,6 @@ module.exports = (client, member) => {
     .addField("Left:", currentDateAndTime)
     .addField("Total Members:", member.guild.memberCount)
     .setTimestamp()
-    .setAuthor("Botrix Logging", member.guild.iconURL());
+    .setAuthor("Tumull Logging", member.guild.iconURL());
   channel.send(embed);
 }
