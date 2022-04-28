@@ -31,7 +31,7 @@ module.exports = {
         break;
     }
     const embed = new MessageEmbed()
-      .setAuthor(`Botrix`, message.guild.iconURL())
+      .setAuthor(`Tumull`, message.guild.iconURL())
       .setColor(colorVar)
       .setThumbnail(message.author.displayAvatarURL())
       .setTitle(`Ping!`)
