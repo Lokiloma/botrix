@@ -45,8 +45,8 @@ module.exports = async (client, message) => {
       const timeLeft = (expirationTime - now) / 1000;
       let embed = new MessageEmbed()
         .setAuthor(
-          `Botrix`,
-          "https://media.discordapp.net/attachments/747602999035166810/757838697080160356/logo_wo_background.png"
+          `Tumull`,
+          "https://cdn.discordapp.com/avatars/914863556644720662/e3e7177fccdae7fe043cf30851157145.webp?size=4096"
         )
         .setDescription(
           `You are currently on command cooldown, please wait \`${timeLeft}\` more seconds before reusing this command.`
