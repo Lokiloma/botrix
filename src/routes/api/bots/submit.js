@@ -46,7 +46,7 @@ route.post('/', async (req, res, next) => {
         }).save();
     
         try{
-            let r = req.app.get('client').guilds.cache.get(config.GUILD_ID).roles.cache.find(r => r.id === '747393632947929139');
+            let r = req.app.get('client').guilds.cache.get(config.GUILD_ID).roles.cache.find(r => r.id === '969265531796471848');
             r.setMentionable(true)
             var e = new discord.MessageEmbed()
             .setTitle('Bot Added!')
@@ -54,7 +54,7 @@ route.post('/', async (req, res, next) => {
             .setDescription(` [Invite bot](https://discord.com/oauth2/authorize?client_id=${data.id}&scope=bot&guild_id=${config.GUILD_ID}&permissions=0)`)
             .addField(`Prefix`, `**\`${data.prefix}\`**`, true)
             .addField(`Made By`, `<@${req.user.id}>`, true)
-            .addField(`Link`, `https://botrix.cc/bots/${data.id}`);
+            .addField(`Link`, `https://tumull.casino/bots/${data.id}`);
             let member = req.app.get('client').guilds.cache.get(config.GUILD_ID).member(req.user.id).send(e);
             req.app.get('client').channels.cache.find(c => c.id === config.MOD_LOG).send(`${r}`)
             req.app.get('client').channels.cache.find(c => c.id === config.MOD_LOG).send(e)
@@ -93,7 +93,7 @@ route.post('/', async (req, res, next) => {
             }).save();
         
             try{
-                let r = req.app.get('client').guilds.cache.get(config.GUILD_ID).roles.cache.find(r => r.id === '747393632947929139');
+                let r = req.app.get('client').guilds.cache.get(config.GUILD_ID).roles.cache.find(r => r.id === '969265531796471848');
                 r.setMentionable(true)
                 var e = new discord.MessageEmbed()
                 .setTitle('Bot Added!')
@@ -101,7 +101,7 @@ route.post('/', async (req, res, next) => {
                 .setDescription(` [Invite bot](https://discord.com/oauth2/authorize?client_id=${data.id}&scope=bot&guild_id=${config.GUILD_ID}&permissions=0)`)
                 .addField(`Prefix`, `**\`${data.prefix}\`**`, true)
                 .addField(`Made By`, `<@${req.user.id}>`, true)
-                .addField(`Link`, `https://botrix.cc/bots/${data.id}`);
+                .addField(`Link`, `https://tumull.casino/bots/${data.id}`);
                 let member = req.app.get('client').guilds.cache.get(config.GUILD_ID).member(req.user.id).send(e);
                 req.app.get('client').channels.cache.find(c => c.id === config.MOD_LOG).send(`${r}`)
                 req.app.get('client').channels.cache.find(c => c.id === config.MOD_LOG).send(e)
