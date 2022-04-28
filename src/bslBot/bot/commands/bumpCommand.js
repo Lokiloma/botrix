@@ -12,13 +12,13 @@ module.exports.run = async (client, message, args) => {
         noServer.setColor('RED')
         noServer.setDescription('Your server is not on the list!')
         noServer.setTimestamp()
-        noServer.setFooter('© Botrix | 2020')
+        noServer.setFooter('© Tumull | 2022')
     
     const tooEarly = new MessageEmbed()
         tooEarly.setTitle('Try again in an hour!')
         tooEarly.setColor('RED')        
         tooEarly.setTimestamp()
-        tooEarly.setFooter('© Botrix | 2020')
+        tooEarly.setFooter('© Tumull | 2022')
 
     const sucsess = new MessageEmbed()
         .setTitle(`${message.guild.name} has been bumped!`)
