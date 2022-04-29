@@ -51,7 +51,7 @@ function submit(){
         long: document.getElementById('long').value,
         tags: tags,
         webhook: document.getElementById('webhook').value || "none",
-        bannerUrl: `https://cdn.botrix.cc/banner/`+uploadedUrl
+        bannerUrl: `https://cdn.tumull.casino/banner/`+uploadedUrl
     }
 
     let url = `/api/resubmit/${botId}`
