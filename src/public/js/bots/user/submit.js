@@ -57,7 +57,7 @@ function submit(){
         tags: tags,
         webhook: document.getElementById('webhook').value || "none",
         additionals: document.getElementById('additionals').value,
-        bannerUrl:`https://cdn.botrix.cc/banner/`+ uploadedUrl
+        bannerUrl:`https://cdn.tumull.casino/banner/`+ uploadedUrl
     }
 
     let url = `/api/submit`
