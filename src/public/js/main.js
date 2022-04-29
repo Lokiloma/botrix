@@ -102,7 +102,7 @@ function changeTheme(){
         Object.defineProperty(window, "console", {
             get: function() {
                 if ($_console$$._commandLineAPI)
-                    throw "Sorry, for security reasons, the script console is deactivated on Botrix.";
+                    throw "Sorry, for security reasons, the script console is deactivated on Tumull.";
                 return $_console$$
             },
             set: function($val$$) {
