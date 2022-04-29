@@ -10,7 +10,7 @@ module.exports = {
   async execute(message, args) {
     try{
         if(!message.member.hasPermission('MANAGE_MESSAGES')) return;
-        let chan_ID = "747638024682078300";
+        let chan_ID = "969267538015973416";
         let chan = message.guild.channels.cache.get(chan_ID)
         message.delete()
         let rule3 = new MessageEmbed()
